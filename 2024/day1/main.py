@@ -1,7 +1,6 @@
 l1=[]
 l2=[]
-solution=[]
-with open("day1/input.txt") as file:
+with open("AdventOfCode/2024/day1/input.txt") as file:
     for line in file:
         l2i, r2i= map(int, line.strip().split())
 
