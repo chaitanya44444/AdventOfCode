@@ -6,7 +6,7 @@ def ifsave(a):
     for i in range(len(a) - 1):
         if abs(a[i] - a[i + 1]) > 3 or abs(a[i] - a[i + 1]) < 1:
             return False
-    return a == sorted(a) or a == sorted(a, reverse=True)
+    return a == sorted(a) 
 
 def p1(a):
     for i in range(len(a)):
@@ -15,7 +15,7 @@ def p1(a):
         else: return False
 def p2(a):
     for i in range(len(a)):
-        a1 = a[:i] + a[i + 1 :]
+        a1 = a[:i] + a[i + 1 :] #python slicing
         if ifsave(a1):
             return True
     return False
